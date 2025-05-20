@@ -1,0 +1,18 @@
+debug: false
+uuid: 034dec28-a7f3-4a1a-806b-d53b8d3c560b
+token_id: rQ7BLLV3DY83KnQI
+token: f3sHEjl4qxu5n16Mww1WZAfisQp6PDoaaWijzS0VrHbz5EqWlXqDByLYnHC8X44m
+api:
+  host: 0.0.0.0
+  port: 443
+  ssl:
+    enabled: false
+    cert: /etc/letsencrypt/live/2574-23-97-62-140.ngrok-free.app/fullchain.pem
+    key: /etc/letsencrypt/live/2574-23-97-62-140.ngrok-free.app/privkey.pem
+  upload_limit: 100
+system:
+  data: /var/lib/pterodactyl/volumes
+  sftp:
+    bind_port: 2022
+allowed_mounts: []
+remote: 'https://b48647e17cbf74a2890a4917c21fb5c0.serveo.net'
