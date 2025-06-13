@@ -1,0 +1,26 @@
+<VirtualHost *:80>
+  ServerName <domain>
+  
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L] 
+</VirtualHost>
+
+<VirtualHost *:443>
+  ServerName <domain>
+  DocumentRoot "/var/www/jexactyl/public"
+
+  AllowEncodedSlashes On
+  
+  php_value upload_max_filesize 100M
+  php_value post_max_size 100M
+
+  <Directory "/var/www/jexactyl/public">
+    Require all granted
+    AllowOverride all
+  </Directory>
+
+  SSLEngine on
+  SSLCertificateFile /etc/certs/fullchain.pem
+  SSLCertificateKeyFile /etc/certs/privkey.pem
+</VirtualHost> 
