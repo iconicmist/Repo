@@ -1,18 +1,18 @@
 debug: false
-uuid: cea92071-b1ef-4b0d-82e8-175d48fe281d
-token_id: WRrpsyaCztOvYNe0
-token: AVjLnqR2RVjtRU6qznUpVUX0fpoZ83k1HE6BGkniVPuU0pwCN5xf2ZMqmvIkwZBV
+uuid: c93422ad-df97-4cf7-be89-62e1bc6e2661
+token_id: qulQ4kDv51cVfMXU
+token: Ws4XQx1RWUv4qL5zlCdjVfboQdPsNBB60RSYxgkPqxhtbJCcWXHXvTWuZ0Ci7bJS
 api:
   host: 0.0.0.0
   port: 8080
   ssl:
     enabled: true
-    cert: /etc/certs/fullchain.pem
-    key: /etc/certs/privkey.pem
+    cert: /etc/letsencrypt/live/node.hostdechoi.dpdns.org/fullchain.pem
+    key: /etc/letsencrypt/live/node.hostdechoi.dpdns.org/privkey.pem
   upload_limit: 100
 system:
-  data: /var/lib/Jexactyl/volumes
+  data: /var/lib/pterodactyl/volumes
   sftp:
     bind_port: 2022
 allowed_mounts: []
-remote: 'https://panel.lenoxhosting.dpdns.org'
+remote: 'https://panel.hostdechoi.dpdns.org'
