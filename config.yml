@@ -16,3 +16,25 @@ system:
     bind_port: 2022
 allowed_mounts: []
 remote: 'https://panel.hostdechoi.dpdns.org'
+docker:
+  network:
+    interface: 172.17.0.192
+    dns:
+    - 1.1.1.1
+    - 1.0.0.1
+    name: pterodactyl_nw
+    ispn: false
+    driver: bridge
+    network_mode: pterodactyl_nw
+    is_internal: false
+    enable_icc: true
+    interfaces:
+      v4:
+        subnet: 172.17.0.0/16
+        gateway: 172.17.0.192
+      v6:
+        subnet: fdba:17c8:6c94::/64
+        gateway: fdba:17c8:6c94::1011
+  domainname: ""
+  registries: {}
+  tmpfs_size: 100
