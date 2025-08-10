@@ -1,7 +1,7 @@
 debug: false
-uuid: 92845604-1256-4657-9171-101b0ff4d6f7
-token_id: 4mWDGPv1sLezazsY
-token: 0GwSjftSpYj0zAFQ2byS1CqYePHVznkr2h4o6PLxKJmvZGgXsRF8D4WQsB8JULyQ
+uuid: d8a06e5a-035e-4144-bc48-bf4d5a6dfdbb
+token_id: 4ouycYMaBFuprzTv
+token: Jf1DCwHVB0yzGyIQpV54HQ0LOtRGaZa1ZobTae2WUCTHwOi2n93rbPF8utzwa2nS
 api:
   host: 0.0.0.0
   port: 8443
@@ -18,7 +18,7 @@ allowed_mounts: []
 remote: 'https://panel.xerohosting.dpdns.org'
 docker:
   network:
-    interface: 172.17.0.10
+    interface: 172.17.0.2
     dns:
     - 1.1.1.1
     - 1.0.0.1
@@ -31,7 +31,7 @@ docker:
     interfaces:
       v4:
         subnet: 172.17.0.0/16
-        gateway: 172.17.0.10
+        gateway: 172.17.0.2
       v6:
         subnet: fdba:17c8:6c94::/64
         gateway: fdba:17c8:6c94::1011
